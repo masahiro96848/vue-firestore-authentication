@@ -1,14 +1,14 @@
 <template>
-    <div class="form">
+    <div class="mb-3 w-50 mx-auto">
         <form action="" @submit.prevent="addPost">
             <input 
                 type="text" 
-                class="name" 
+                class="form-control" 
                 placeholder="名前"
                 v-model="name"
             >
-            <textarea name="" id="" cols="30" rows="10" v-model="post"></textarea>
-            <button type="submit" class="">
+            <textarea name="" class="form-control" id="" cols="30" rows="10" v-model="post"></textarea>
+            <button type="submit" class="btn btn-primary mx-auto d-block">
                 投稿する
             </button>
         </form>
