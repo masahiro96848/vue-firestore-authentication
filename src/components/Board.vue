@@ -1,7 +1,6 @@
 <template>
     <div class="board">
         
-        HelloWorld
         <AddPost />
     </div>
 
