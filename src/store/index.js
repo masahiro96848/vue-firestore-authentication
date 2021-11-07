@@ -12,16 +12,16 @@ const store =  new Vuex.Store({
 		]
 	},
 	mutations: {
-		addList(state, payload) {
+		addPost(state, payload) {
 			state.posts.push({
 				name: payload.name,
-				post: payload.post
+				summary: payload.summary
 			})
 		}
 	},
 	actions: {
-		addList(context, payload) {
-			context.commit('addList', payload)
+		addPost(context, payload) {
+			context.commit('addPost', payload)
 		}
 	},
 	getters: {

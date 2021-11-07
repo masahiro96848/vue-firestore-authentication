@@ -7,7 +7,7 @@
                 placeholder="名前"
                 v-model="name"
             >
-            <textarea name="" class="form-control" id="" cols="30" rows="10" v-model="post"></textarea>
+            <textarea name="" class="form-control" id="" cols="30" rows="10" v-model="summary"></textarea>
             <button type="submit" class="btn btn-primary mx-auto d-block">
                 投稿する
             </button>
@@ -20,12 +20,15 @@ export default {
     data() {
         return {
             name: '',
-            post: '',
+            summary: '',
         }
     },
     methods: {
         addPost() {
             this.$store.dispatch('addPost', {name: this.name})
+            this.name = ""
+            this.$store.dispatch('addPost', {name: this.summary})
+            this.summary = ""
         }
     }
 }
