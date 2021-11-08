@@ -8,7 +8,7 @@ const savedPosts = localStorage.getItem('board-posts')
 const store =  new Vuex.Store({
 	state: {
 		posts: savedPosts ? JSON.parse(savedPosts):[
-
+			
 		]
 	},
 	mutations: {
