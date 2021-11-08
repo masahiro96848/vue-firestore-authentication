@@ -1,9 +1,9 @@
 <template>
     <div class="board">
-        <Post v-for="(item, index) in posts" 
-            :key="item.id"
-            :name="item.name"
-            :summary="item.summary"
+        <Post v-for="(post, index) in posts"
+            :key="post.id"
+            :name="post.name"
+            :summary="post.summary"
             :postIndex="index"
         />
         <AddPost />

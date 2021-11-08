@@ -18,8 +18,12 @@ export default {
             type: String,
             required: true,
         },
+        posts: {
+            type: Array,
+        },
         postIndex: {
             type: Number,
+            require: true,
         }
     }
 }
