@@ -8,7 +8,7 @@
                 v-model="name"
             >
             <textarea name="" placeholder="投稿内容を入力" class="form-control" id="" cols="30" rows="10" v-model="summary"></textarea>
-            <button type="submit" class="btn btn-primary mx-auto d-block">
+            <button type="submit" class="btn btn-primary  mx-auto mt-3 d-block">
                 投稿する
             </button>
         </form>

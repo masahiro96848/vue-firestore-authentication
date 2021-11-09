@@ -28,3 +28,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.postheader {
+    text-align: center;
+}
+</style>
