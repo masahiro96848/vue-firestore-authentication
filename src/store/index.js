@@ -28,4 +28,8 @@ const store =  new Vuex.Store({
 	}
 })
 
+store.subscribe((mutation, state) => {
+	localStorage.setItem('board-posts', JSON.stringify(state.posts))
+})
+
 export default store

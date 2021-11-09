@@ -1,5 +1,6 @@
 <template>
     <div class="board">
+        <h2>掲示板</h2>
         <Post v-for="(post, index) in posts"
             :key="post.id"
             :name="post.name"
