@@ -15,7 +15,8 @@
     </div>
 </template>
 
-<script>
+<script> 
+import axios from 'axios'
 export default {
     data() {
         return {
@@ -25,6 +26,25 @@ export default {
     },
     methods: {
         addPost() {
+            axios.post(
+                "https://firestore.googleapis.com/v1/projects/firestore-authntication-todo/databases/(default)/documents/comments",
+                {
+                    fields: {
+                        name: {
+                            stringValue: this.name
+                        },
+                        summary: {
+                            stringValue: this.summary
+                        }
+                    }
+                }
+            )
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => {
+                console.log(error)
+            })
             this.$store.dispatch('addPost', {name: this.name, summary: this.summary})
             this.name = ""
             this.summary = ""
