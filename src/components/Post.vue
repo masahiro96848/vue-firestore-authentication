@@ -1,8 +1,9 @@
 <template>
     <div class="post">
         <div class="postheader">
-            <p class="post-name">{{ name }}</p>
-            <p class="post-summary">{{ summary }}</p>
+            <hr>
+            <p class="post-name">名前:{{ name }}</p>
+            <p class="post-summary">内容:{{ summary }}</p>
         </div>
     </div>
 </template>
